@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "section section section"
+    "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.contenedor-header{
+    display: flex;
+    padding: 15px 25px 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-logos{
+    display: flex;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: aliceblue;
+    gap: 10px;
+    padding: 0px 15px 0px 0px;
+}
+
+img{
+    height: 50px;
+    border-radius: 100%;
+}
+
+.contenedor-busqueda{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    gap: 20px;  
+}
+
+.barra{
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.buscar{
+    background: black;
+    border-radius: 3px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+.contenedor-secciones{
+    display: flex;
+    padding: 0px 0px 0px 10px;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav, a{
+    display: flex;
+    font-size: 10px;
+    color: aliceblue;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-decoration: none;
+
+}
+section{    
+    grid-area: section;
+    height: 100vh;
+    padding: 20px;
+    align-content: center;     
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+
+}
+
+.card{
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.card h2{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
+}
+.pokemon{
+    height: 80px;
+    background-color: rgb(197, 201, 201);
+}
+
+.contendor-info, strong{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    align-items: flex-start;
+    gap: 5px;  
+}
+
+button{
+    height: 30px;
+    border-radius: 5px;
+    color: aliceblue;
+    
+    background-color: black;
+}
+
+
+
+footer{
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
